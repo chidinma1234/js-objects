@@ -1,23 +1,17 @@
 'use strict';
 //? Question 1
 
-const instagram = function (
-  handleOfAuthor,
-  content,
-  imageLink,
-  noOfViews,
-  noOfLikes
-) {
+function Instagram(handleOfAuthor, content, imageLink, noOfViews, noOfLikes) {
   this.handleOfAuthor = handleOfAuthor;
   this.content = content;
   this.imageLink = imageLink;
   this.noOfViews = noOfViews;
   this.noOfLikes = noOfLikes;
-};
+}
 
 //? Question 2
 
-const sophyIgPost = new instagram(
+const sophyIgPost = new Instagram(
   '@real_sophy',
   'Living my best live 😊',
   'https://www.instagram.com/p/Co9__DrLsRD/?utm_source=ig_web_copy_link',
@@ -25,7 +19,7 @@ const sophyIgPost = new instagram(
   10000
 );
 
-const arikeIgPost = new instagram(
+const arikeIgPost = new Instagram(
   '@d_arike',
   'RTID',
   'https://www.instagram.com/reel/Co-LK_-qVWo/?utm_source=ig_web_copy_link',
